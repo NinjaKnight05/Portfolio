@@ -2,6 +2,8 @@
 
 import { Github, Linkedin, Mail, ArrowDown } from "lucide-react"
 import { motion } from "motion/react"
+import { NeuralNetwork } from "@/components/portfolio/neural-network"
+import { HexBrain } from "@/components/portfolio/hex-brain"
 
 const container = {
   hidden: {},
@@ -18,13 +20,14 @@ const item = {
 export function Hero() {
   return (
     <section className="relative flex min-h-screen items-center overflow-hidden px-6 pt-24">
-      <div aria-hidden className="grid-bg pointer-events-none absolute inset-0 opacity-70" />
+      <NeuralNetwork className="pointer-events-none absolute inset-0 z-0 opacity-60" />
+      <div aria-hidden className="grid-bg pointer-events-none absolute inset-0 opacity-50" />
 
       <motion.div
         variants={container}
         initial="hidden"
         animate="show"
-        className="relative mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-12 md:grid-cols-[1fr_auto]"
+        className="relative z-10 mx-auto grid w-full max-w-6xl grid-cols-1 items-center gap-12 md:grid-cols-[1fr_auto]"
       >
         <div className="text-center md:text-left">
           <motion.p variants={item} className="mb-4 font-mono text-sm tracking-wide text-accent">
@@ -85,6 +88,10 @@ export function Hero() {
               className="absolute -inset-4 rounded-full bg-foreground/10 blur-2xl transition-all duration-500 group-hover:bg-foreground/20"
             />
             <div aria-hidden className="absolute -inset-2 rounded-full border border-border animate-spin-slow" />
+            <HexBrain
+              aria-hidden
+              className="pointer-events-none absolute -inset-12 text-accent opacity-50"
+            />
             <img
               src="/profile.png"
               alt="Portrait of Anurag Thakur"
