@@ -1,4 +1,8 @@
+"use client"
+
 import { ExternalLink, Github } from "lucide-react"
+import { motion } from "motion/react"
+import { Reveal } from "@/components/portfolio/reveal"
 
 const projects = [
   {
@@ -40,60 +44,67 @@ const projects = [
 export function Projects() {
   return (
     <section id="projects" className="mx-auto max-w-6xl scroll-mt-20 px-6 py-24">
-      <div className="mb-10 flex items-center gap-4">
-        <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
-          <span className="font-mono text-lg text-primary">03.</span> Projects
-        </h2>
-        <span className="h-px flex-1 bg-border" />
-      </div>
+      <Reveal>
+        <div className="mb-10 flex items-center gap-4">
+          <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+            <span className="font-mono text-lg text-accent">03.</span> Projects
+          </h2>
+          <span className="h-px flex-1 bg-border" />
+        </div>
+      </Reveal>
 
       <div className="grid gap-6 sm:grid-cols-2">
-        {projects.map((p) => (
-          <article
-            key={p.title}
-            className="group flex flex-col rounded-xl border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/50 hover:shadow-[0_8px_30px_-12px_oklch(0.78_0.14_200/0.35)]"
-          >
-            <div className="mb-4 flex items-start justify-between">
-              <span className="rounded-full bg-primary/10 px-3 py-1 font-mono text-xs text-primary">{p.tag}</span>
-              <div className="flex items-center gap-3 text-muted-foreground">
-                {p.github && (
-                  <a
-                    href={p.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`${p.title} GitHub repository`}
-                    className="transition-colors hover:text-primary"
-                  >
-                    <Github className="size-5" />
-                  </a>
-                )}
-                {p.demo && (
-                  <a
-                    href={p.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`${p.title} live demo`}
-                    className="transition-colors hover:text-primary"
-                  >
-                    <ExternalLink className="size-5" />
-                  </a>
-                )}
+        {projects.map((p, i) => (
+          <Reveal key={p.title} delay={(i % 2) * 0.1}>
+            <motion.article
+              whileHover={{ y: -6 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+              className="group relative flex h-full flex-col overflow-hidden rounded-xl border border-border bg-card p-6 transition-colors duration-300 hover:border-foreground/30"
+            >
+              <div
+                aria-hidden
+                className="pointer-events-none absolute -right-16 -top-16 size-40 rounded-full bg-foreground/5 opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-100"
+              />
+              <div className="mb-4 flex items-start justify-between">
+                <span className="rounded-full bg-secondary px-3 py-1 font-mono text-xs text-accent">{p.tag}</span>
+                <div className="flex items-center gap-3 text-muted-foreground">
+                  {p.github && (
+                    <a
+                      href={p.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${p.title} GitHub repository`}
+                      className="transition-colors hover:text-foreground"
+                    >
+                      <Github className="size-5" />
+                    </a>
+                  )}
+                  {p.demo && (
+                    <a
+                      href={p.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${p.title} live demo`}
+                      className="transition-colors hover:text-foreground"
+                    >
+                      <ExternalLink className="size-5" />
+                    </a>
+                  )}
+                </div>
               </div>
-            </div>
 
-            <h3 className="text-lg font-semibold text-foreground transition-colors group-hover:text-primary">
-              {p.title}
-            </h3>
-            <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{p.description}</p>
+              <h3 className="text-lg font-semibold text-foreground">{p.title}</h3>
+              <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">{p.description}</p>
 
-            <div className="mt-4 flex flex-wrap gap-2">
-              {p.tech.map((t) => (
-                <span key={t} className="font-mono text-xs text-muted-foreground">
-                  {t}
-                </span>
-              ))}
-            </div>
-          </article>
+              <div className="mt-4 flex flex-wrap gap-2">
+                {p.tech.map((t) => (
+                  <span key={t} className="font-mono text-xs text-muted-foreground">
+                    {t}
+                  </span>
+                ))}
+              </div>
+            </motion.article>
+          </Reveal>
         ))}
       </div>
     </section>

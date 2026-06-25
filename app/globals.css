@@ -4,39 +4,39 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: oklch(0.16 0.012 240);
-  --foreground: oklch(0.95 0.005 240);
-  --card: oklch(0.21 0.015 240);
-  --card-foreground: oklch(0.95 0.005 240);
-  --popover: oklch(0.21 0.015 240);
-  --popover-foreground: oklch(0.95 0.005 240);
-  --primary: oklch(0.78 0.14 200);
-  --primary-foreground: oklch(0.16 0.012 240);
-  --secondary: oklch(0.26 0.015 240);
-  --secondary-foreground: oklch(0.95 0.005 240);
-  --muted: oklch(0.26 0.015 240);
-  --muted-foreground: oklch(0.65 0.015 240);
-  --accent: oklch(0.78 0.14 200);
-  --accent-foreground: oklch(0.16 0.012 240);
+  --background: oklch(0.13 0 0);
+  --foreground: oklch(0.96 0 0);
+  --card: oklch(0.17 0 0);
+  --card-foreground: oklch(0.96 0 0);
+  --popover: oklch(0.17 0 0);
+  --popover-foreground: oklch(0.96 0 0);
+  --primary: oklch(0.97 0 0);
+  --primary-foreground: oklch(0.13 0 0);
+  --secondary: oklch(0.22 0 0);
+  --secondary-foreground: oklch(0.96 0 0);
+  --muted: oklch(0.22 0 0);
+  --muted-foreground: oklch(0.62 0 0);
+  --accent: oklch(0.75 0.04 250);
+  --accent-foreground: oklch(0.13 0 0);
   --destructive: oklch(0.6 0.22 25);
-  --destructive-foreground: oklch(0.95 0.005 240);
-  --border: oklch(0.3 0.015 240);
-  --input: oklch(0.3 0.015 240);
-  --ring: oklch(0.78 0.14 200);
-  --chart-1: oklch(0.78 0.14 200);
-  --chart-2: oklch(0.6 0.12 220);
-  --chart-3: oklch(0.5 0.1 240);
-  --chart-4: oklch(0.7 0.13 180);
-  --chart-5: oklch(0.4 0.08 240);
-  --radius: 0.5rem;
-  --sidebar: oklch(0.16 0.012 240);
-  --sidebar-foreground: oklch(0.95 0.005 240);
-  --sidebar-primary: oklch(0.78 0.14 200);
-  --sidebar-primary-foreground: oklch(0.16 0.012 240);
-  --sidebar-accent: oklch(0.26 0.015 240);
-  --sidebar-accent-foreground: oklch(0.95 0.005 240);
-  --sidebar-border: oklch(0.3 0.015 240);
-  --sidebar-ring: oklch(0.78 0.14 200);
+  --destructive-foreground: oklch(0.96 0 0);
+  --border: oklch(0.27 0 0);
+  --input: oklch(0.27 0 0);
+  --ring: oklch(0.6 0 0);
+  --chart-1: oklch(0.85 0 0);
+  --chart-2: oklch(0.7 0 0);
+  --chart-3: oklch(0.55 0 0);
+  --chart-4: oklch(0.4 0 0);
+  --chart-5: oklch(0.3 0 0);
+  --radius: 0.75rem;
+  --sidebar: oklch(0.13 0 0);
+  --sidebar-foreground: oklch(0.96 0 0);
+  --sidebar-primary: oklch(0.97 0 0);
+  --sidebar-primary-foreground: oklch(0.13 0 0);
+  --sidebar-accent: oklch(0.22 0 0);
+  --sidebar-accent-foreground: oklch(0.96 0 0);
+  --sidebar-border: oklch(0.27 0 0);
+  --sidebar-ring: oklch(0.6 0 0);
 }
 
 @theme inline {
@@ -187,5 +187,52 @@
       linear-gradient(var(--background), var(--background)) padding-box,
       linear-gradient(135deg, var(--foreground) 25%, transparent 25%, transparent 50%, var(--foreground) 50%, var(--foreground) 75%, transparent 75%) border-box;
     background-size: 100% 100%, 8px 8px;
+  }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(to right, oklch(0.27 0 0 / 0.35) 1px, transparent 1px),
+      linear-gradient(to bottom, oklch(0.27 0 0 / 0.35) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%);
+  }
+
+  .animate-float {
+    animation: float 8s ease-in-out infinite;
+  }
+  .animate-float-slow {
+    animation: float 12s ease-in-out infinite;
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-30px) rotate(8deg); }
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 24s linear infinite;
+  }
+  @keyframes spin-slow {
+    to { transform: rotate(360deg); }
+  }
+
+  .animate-blob {
+    animation: blob 18s ease-in-out infinite;
+  }
+  @keyframes blob {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(40px, -50px) scale(1.15); }
+    66% { transform: translate(-30px, 30px) scale(0.9); }
+  }
+
+  .gradient-text {
+    background: linear-gradient(90deg, oklch(0.98 0 0), oklch(0.78 0.04 250), oklch(0.98 0 0));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 5s linear infinite;
+  }
+  @keyframes shimmer {
+    to { background-position: 200% center; }
   }
 }

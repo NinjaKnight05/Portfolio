@@ -22,7 +22,7 @@ export function Contact() {
     <section id="contact" className="mx-auto max-w-6xl scroll-mt-20 px-6 py-24">
       <div className="mb-10 flex items-center gap-4">
         <h2 className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
-          <span className="font-mono text-lg text-primary">05.</span> Contact
+          <span className="font-mono text-lg text-accent">05.</span> Contact
         </h2>
         <span className="h-px flex-1 bg-border" />
       </div>

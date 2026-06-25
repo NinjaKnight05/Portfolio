@@ -6,10 +6,12 @@ import { Projects } from "@/components/portfolio/projects"
 import { Skills } from "@/components/portfolio/skills"
 import { Contact } from "@/components/portfolio/contact"
 import { Footer } from "@/components/portfolio/footer"
+import { AnimatedBackground } from "@/components/portfolio/animated-background"
 
 export default function Home() {
   return (
     <main className="relative min-h-screen overflow-x-hidden">
+      <AnimatedBackground />
       <Nav />
       <Hero />
       <About />
