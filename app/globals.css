@@ -235,4 +235,12 @@
   @keyframes shimmer {
     to { background-position: 200% center; }
   }
+
+  .animate-twinkle {
+    animation: twinkle ease-in-out infinite;
+  }
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.2; transform: scale(0.8); }
+    50% { opacity: 1; transform: scale(1.15); }
+  }
 }
