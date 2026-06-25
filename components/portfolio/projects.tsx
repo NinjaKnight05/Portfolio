@@ -10,13 +10,13 @@ const projects = [
     tag: "AI Agent",
     description:
       "A RAG-based AI agent that indexes GitHub repositories and answers developer questions about the codebase.",
-    tech: ["LangChain", "Qdrant Cloud", "Groq Llama 3", "FastAPI", "React"],
+    tech: ["LangChain", "Pinecone", "Groq Llama 3", "FastAPI", "React"],
     demo: "https://gitexplainer.onrender.com",
     github: "https://github.com/NinjaKnight05",
   },
   {
     title: "Energy Forecast Prediction",
-    tag: "ML",
+    tag: "Machine Learning",
     description:
       "XGBoost forecasting app on 121k+ hourly PJM energy records (2004–2018). Improved R² from 0.45 to 0.99 through feature engineering.",
     tech: ["XGBoost", "Pandas", "Feature Engineering", "Streamlit"],
@@ -38,6 +38,15 @@ const projects = [
       "Real-time drowsiness detection using Eye Aspect Ratio (EAR) thresholding to alert drivers before they fall asleep.",
     tech: ["OpenCV", "dlib", "EAR", "Python"],
     github: "https://github.com/NinjaKnight05",
+  },
+  {
+    title: "Churn Prediction",
+    tag: "Machine Learning",
+    description:
+      "It predicts whether a telecom customer is likely to cancel their subscription {churn} or stay",
+    tech: ["Random Forest", "Pandas", "Feature Engineering", "Streamlit"],
+    github: "https://github.com/NinjaKnight05",
+    demo: "https://churnp1.streamlit.app",
   },
 ]
 

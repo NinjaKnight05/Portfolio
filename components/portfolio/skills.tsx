@@ -8,7 +8,7 @@ const groups = [
   },
   {
     title: "Machine Learning",
-    items: ["Scikit-Learn", "XGBoost", "Feature Engineering", "Pandas", "NumPy", "Data Visualization"],
+    items: ["Scikit-Learn", "Supervised Learning","UnSupervised Learning", "Feature Engineering", "Pandas", "NumPy", "Data Visualization"],
   },
   { title: "Deep Learning", items: ["TensorFlow", "PyTorch", "CNNs", "Transfer Learning", "LSTMs"] },
   { title: "Computer Vision", items: ["OpenCV", "dlib", "MediaPipe", "YOLO"] },

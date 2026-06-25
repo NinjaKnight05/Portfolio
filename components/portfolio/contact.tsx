@@ -37,7 +37,7 @@ export function Contact() {
 
           <div className="mt-6 space-y-3">
             <a
-              href="mailto:thakurmnu011@gmail.com"
+              href="mailto:obitotobi0502@gmail.com"
               className="flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"
             >
               <Mail className="size-5" /> thakurmnu011@gmail.com
@@ -51,7 +51,7 @@ export function Contact() {
               <Github className="size-5" /> github.com/NinjaKnight05
             </a>
             <a
-              href="https://linkedin.com/in/anurag-thakur"
+              href="https://linkedin.com/in/anurag-thakur-660683241"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 text-sm text-muted-foreground transition-colors hover:text-primary"

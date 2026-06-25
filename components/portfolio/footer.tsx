@@ -1,37 +1,29 @@
-import { Github, Linkedin, Mail } from "lucide-react"
+import { Instagram, Twitter } from "lucide-react"
 
 export function Footer() {
   return (
     <footer className="border-t border-border px-6 py-10">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 sm:flex-row">
         <p className="text-sm text-muted-foreground">
-          &copy; {new Date().getFullYear()} Anurag Thakur. Built with Next.js &amp; Tailwind CSS.
+          &copy; {new Date().getFullYear()} Anurag Thakur  AI/ML Engineer &amp; All rights reserved.
         </p>
         <div className="flex items-center gap-5 text-muted-foreground">
           <a
-            href="https://github.com/NinjaKnight05"
+            href="https://www.instagram.com/anurag.thakurr___05/"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="GitHub"
+            aria-label="Instagram"
             className="transition-colors hover:text-primary"
           >
-            <Github className="size-5" />
+            <Instagram className="size-5" />
           </a>
+          
           <a
-            href="https://linkedin.com/in/anurag-thakur"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
+            href="https://x.com/AnuragT0505"
+            aria-label="Twitter"
             className="transition-colors hover:text-primary"
           >
-            <Linkedin className="size-5" />
-          </a>
-          <a
-            href="mailto:thakurmnu011@gmail.com"
-            aria-label="Email"
-            className="transition-colors hover:text-primary"
-          >
-            <Mail className="size-5" />
+            <Twitter className="size-5" />
           </a>
         </div>
       </div>

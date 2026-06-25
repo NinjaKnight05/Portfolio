@@ -21,9 +21,12 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Anurag Thakur — AI/ML Engineer',
+  title: 'Anurag Thakur',
   description: 'AI/ML Engineer & Generative AI Developer building real-world AI systems: RAG pipelines, AI agents, and LLM-powered applications.',
   generator: 'v0.app',
+  icons: {
+    icon: "icon.png",
+  },
 }
 
 export default function RootLayout({

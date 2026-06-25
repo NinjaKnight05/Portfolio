@@ -40,16 +40,30 @@ export function About() {
         </Reveal>
 
         <Reveal delay={0.2}>
-          <div className="group rounded-xl border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-foreground/30">
-            <div className="mb-4 inline-flex size-10 items-center justify-center rounded-lg bg-secondary text-accent">
-              <GraduationCap className="size-5" />
+          <div className="flex flex-col gap-6">
+            <div className="group rounded-xl border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-foreground/30">
+              <div className="mb-4 inline-flex size-10 items-center justify-center rounded-lg bg-secondary text-accent">
+                <GraduationCap className="size-5" />
+              </div>
+              <h3 className="font-semibold text-foreground">Education</h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                B.Tech in Computer Science &amp; Engineering
+              </p>
+              <p className="text-sm text-muted-foreground">D.A.V University</p>
+              <p className="mt-1 font-mono text-xs text-accent">2021 — 2025</p>
             </div>
-            <h3 className="font-semibold text-foreground">Education</h3>
-            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-              B.Tech in Computer Science &amp; Engineering
-            </p>
-            <p className="text-sm text-muted-foreground">D.A.V University</p>
-            <p className="mt-1 font-mono text-xs text-accent">2021 — 2025</p>
+
+            <div className="group rounded-xl border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-foreground/30">
+              <div className="mb-4 inline-flex size-10 items-center justify-center rounded-lg bg-secondary text-accent">
+                <GraduationCap className="size-5" />
+              </div>
+              <h3 className="font-semibold text-foreground">Education</h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                12th — Science (PCM)
+              </p>
+              <p className="text-sm text-muted-foreground">DPS School, HPBOSE</p>
+              <p className="mt-1 font-mono text-xs text-accent">2019 — 2021</p>
+            </div>
           </div>
         </Reveal>
       </div>

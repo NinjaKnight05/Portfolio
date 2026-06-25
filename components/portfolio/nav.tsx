@@ -30,9 +30,9 @@ export function Nav() {
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#" className="font-mono text-sm font-semibold tracking-tight text-foreground">
-          <span className="text-accent">{"<"}</span>
-          anurag
-          <span className="text-accent">{" />"}</span>
+          <span className="text-accent">{"< "}</span>
+          Anurag 
+          <span className="text-accent">{" 🐦‍🔥>"}</span>
         </a>
 
         <div className="hidden items-center gap-8 md:flex">

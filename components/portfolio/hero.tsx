@@ -65,7 +65,7 @@ export function Hero() {
               <Github className="size-4" /> GitHub
             </a>
             <a
-              href="https://linkedin.com/in/anurag-thakur"
+              href="https://linkedin.com/in/anurag-thakur-660683241"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-lg border border-border px-5 py-2.5 text-sm font-medium text-foreground transition-all duration-300 hover:-translate-y-0.5 hover:border-foreground/60"
@@ -73,7 +73,7 @@ export function Hero() {
               <Linkedin className="size-4" /> LinkedIn
             </a>
             <a
-              href="mailto:thakurmnu011@gmail.com"
+              href="mailto:obitotobi0502@gmail.com"
               className="inline-flex items-center gap-2 rounded-lg border border-border px-5 py-2.5 text-sm font-medium text-foreground transition-all duration-300 hover:-translate-y-0.5 hover:border-foreground/60"
             >
               <Mail className="size-4" /> Email
@@ -97,7 +97,7 @@ export function Hero() {
               alt="Portrait of Anurag Thakur"
               width={208}
               height={208}
-              className="relative size-48 rounded-full border-2 border-border object-cover grayscale transition-all duration-500 group-hover:grayscale-0 sm:size-52"
+              className="relative size-48 rounded-full border-2 border-border object-cover transition-all duration-500 sm:size-52"
             />
           </div>
         </motion.div>

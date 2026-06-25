@@ -12,10 +12,10 @@ const experiences = [
     ],
   },
   {
-    role: "Full Stack Developer Trainee",
+    role: "Python Developer Trainee",
     company: "O7 Services",
-    period: "Jun 2025 — Jul 2025",
-    points: ["Built responsive React.js applications with Firebase Auth and Firestore."],
+    period: "Jun 2024 — Jul 2024",
+    points: ["Built Daily Task Manager using Python-Tkinter."],
   },
 ]
 
