@@ -11,7 +11,7 @@ const projects = [
     description:
       "PaperPilot AI – an agentic study assistant that routes each question to your uploaded PDF, live web search, or a general LLM, with citations.",
     tech: ["LangChain", "Pinecone", "NVIDIA Meta/llama 3", "FastAPI", "React"," CrewAI"," RAG"],
-    demo: "https://gitexplainer.onrender.com",
+    demo: "https://paperpilot-ai-sigma.vercel.app/",
     github: "https://github.com/NinjaKnight05/PaperPilot-AI",
   },
   {
