@@ -5,14 +5,23 @@ import { motion } from "motion/react"
 import { Reveal } from "@/components/portfolio/reveal"
 
 const projects = [
+   {
+    title: "GitHub Code Explainer",
+    tag: "AI Agent",
+    description:
+      "PaperPilot AI – an agentic study assistant that routes each question to your uploaded PDF, live web search, or a general LLM, with citations.",
+    tech: ["LangChain", "Pinecone", "NVIDIA Meta/llama 3", "FastAPI", "React"," CrewAI"," RAG"],
+    demo: "https://gitexplainer.onrender.com",
+    github: "https://github.com/NinjaKnight05/PaperPilot-AI",
+  },
   {
     title: "GitHub Code Explainer",
     tag: "AI Agent",
     description:
       "A RAG-based AI agent that indexes GitHub repositories and answers developer questions about the codebase.",
-    tech: ["LangChain", "Pinecone", "Groq Llama 3", "FastAPI", "React"],
+    tech: ["LangChain", "Pinecone", "Groq Llama 3", "FastAPI", "React", "RAG"],
     demo: "https://gitexplainer.onrender.com",
-    github: "https://github.com/NinjaKnight05",
+    github: "https://github.com/NinjaKnight05/Kodexa",
   },
   {
     title: "Energy Forecast Prediction",
@@ -21,7 +30,7 @@ const projects = [
       "XGBoost forecasting app on 121k+ hourly PJM energy records (2004–2018). Improved R² from 0.45 to 0.99 through feature engineering.",
     tech: ["XGBoost", "Pandas", "Feature Engineering", "Streamlit"],
     demo: "https://energyforcast.streamlit.app",
-    github: "https://github.com/NinjaKnight05",
+    github: "https://github.com/NinjaKnight05/Energy-Forcast",
   },
   {
     title: "PDF Q&A Chatbot",
@@ -29,7 +38,7 @@ const projects = [
     description:
       "A RAG chatbot that answers questions from uploaded PDFs using FAISS vector indexing and Hugging Face embeddings.",
     tech: ["FAISS", "Hugging Face", "LangChain", "Python"],
-    github: "https://github.com/NinjaKnight05",
+    github: "https://github.com/NinjaKnight05/",
   },
   {
     title: "Driver Drowsiness Alert System",
@@ -37,7 +46,7 @@ const projects = [
     description:
       "Real-time drowsiness detection using Eye Aspect Ratio (EAR) thresholding to alert drivers before they fall asleep.",
     tech: ["OpenCV", "dlib", "EAR", "Python"],
-    github: "https://github.com/NinjaKnight05",
+    github: "https://github.com/NinjaKnight05/OpenCv",
   },
   {
     title: "Churn Prediction",
@@ -46,7 +55,7 @@ const projects = [
       "It predicts whether a telecom customer is likely to cancel their subscription {churn} or stay",
     tech: ["Random Forest", "Pandas", "Feature Engineering", "Streamlit"],
     github: "https://github.com/NinjaKnight05",
-    demo: "https://churnp1.streamlit.app",
+    demo: "https://churnp1.streamlit.app/PredictionModel",
   },
 ]
 
