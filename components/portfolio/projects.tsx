@@ -6,7 +6,7 @@ import { Reveal } from "@/components/portfolio/reveal"
 
 const projects = [
    {
-    title: "GitHub Code Explainer",
+    title: "Paper Pilot AI",
     tag: "AI Agent",
     description:
       "PaperPilot AI – an agentic study assistant that routes each question to your uploaded PDF, live web search, or a general LLM, with citations.",
